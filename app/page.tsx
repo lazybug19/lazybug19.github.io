@@ -33,7 +33,7 @@ export default function Home() {
 				<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
 			</div>
 			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>I'm&nbsp;</h1>
+				<h1 className={title()}>I&apos;m&nbsp;</h1>
 				<h1 className={title({ color: "violet" })} >Santrupti&nbsp;</h1>
 				<br />
 				<h1 className={title()} ref={el}></h1>
