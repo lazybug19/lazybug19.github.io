@@ -1,6 +1,7 @@
 "use client"
 import { LinkedInIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
+import Image from "next/image";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -13,13 +14,7 @@ export default function AboutPage() {
 			<div className="inline-block w-full text-center">
 				<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-left">
 					<div className="relative col-span-6 md:col-span-4">
-						<img
-							alt="me"
-							className="object-me rounded-full"
-							height="500%"
-							src="/img/me.jpeg"
-							width="100%"
-						/>
+						<Image src={"/img/me.jpeg"} height={150} width={150} alt="me" className="rounded-full" />
 					</div>
 
 					<div className="flex flex-col col-span-6 md:col-span-8 justify-between items-start gap-0">
