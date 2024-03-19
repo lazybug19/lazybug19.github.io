@@ -1,6 +1,44 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
 
+export const EduIcon: React.FC<IconSvgProps> = ({
+	size,
+	width = 512,
+	height = 512,
+	...props
+}) => {
+	return (
+		<svg
+			height={size || height}
+			viewBox="0 0 512 512"
+			width={size || width}
+			color="#fff"
+			{...props}
+		>
+			<path d="M256 64L32 176.295l32 21.072V400l32 16V217.849L255.852 320l132.144-85.451L480 174.727z" fill="#ffffff" className="color000000 svgShape" /><path d="M390.13 256L256 343.768 120.531 256 112 337.529C128 349.984 224 416 256.002 448 288 416 384 350.031 400 337.561L390.13 256z" fill="#ffffff" className="color000000 svgShape" />
+		</svg>
+	);
+};
+
+export const WorkIcon: React.FC<IconSvgProps> = ({
+	size,
+	width = 512,
+	height = 512,
+	...props
+}) => {
+	return (
+		<svg
+			height={size || height}
+			viewBox="0 0 512 512"
+			width={size || width}
+			color="#fff"
+			{...props}
+		>
+			<path d="M452 120h-76C376 53.726 322.274 0 256 0S136 53.726 136 120H60c-33.137 0-60 26.863-60 60v272c0 33.137 26.863 60 60 60h392c33.137 0 60-26.863 60-60V180c0-33.137-26.863-60-60-60zM256 60c33.137 0 60 26.863 60 60H196c0-33.137 26.863-60 60-60zm146 200v20c0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30v-20H170v20c0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30v-20c-16.569 0-30-13.431-30-30s13.431-30 30-30h292c16.569 0 30 13.431 30 30s-13.431 30-30 30z" fill="#ffffff" className="color000000 svgShape" />
+		</svg>
+	);
+};
+
 export const LinkedInIcon: React.FC<IconSvgProps> = ({
 	size = 20,
 	width,

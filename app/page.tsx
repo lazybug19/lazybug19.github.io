@@ -1,7 +1,7 @@
 "use client"
 import { title } from "@/components/primitives";
 import Image from "next/image";
-import { LinkedInIcon } from "@/components/icons";
+import { EduIcon, LinkedInIcon, WorkIcon } from "@/components/icons";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Card, CardBody } from "@nextui-org/card";
@@ -15,7 +15,7 @@ export default function Home() {
 
 	useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ["Innovator", "Dancer", "Writer", "Tinkerer", "ECE@ BITS Pilani"],
+			strings: ["Innovator", "Dancer", "Writer", "Tinkerer", "ECE @BITS Pilani"],
 			startDelay: 300,
 			typeSpeed: 70,
 			backSpeed: 70,
@@ -63,16 +63,12 @@ export default function Home() {
 							</div>
 
 							<div className="flex col-span-3 md:col-span-8">
-								{/* <div className="flex justify-between items-start">
-									<div className="flex flex-col gap-0"> */}
 								<div className="inline-block w-full text-left">
 									<h1 className={title({ color: "violet", size: "sm" })}>Hi,&nbsp;</h1>
 									<h1 className="inline-block text-1xl">I am Santrupti, currently an ECE junior&nbsp;</h1>
 									at BITS Pilani, Hyderabad Campus. I am an <br />  avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate <br />of women in technology and have a knack for swiftly grasping new tech frameworks. <br /><br />
 									Plus, I am a trained western and classical dancer. You can find me reading books or writing <br /> poems in my free time. You can travel down my memory lane below!
 								</div>
-								{/* </div>
-								</div> */}
 							</div>
 						</div>
 					</div>
@@ -82,13 +78,12 @@ export default function Home() {
 					layout="2-columns">
 					<VerticalTimelineElement
 						className="vertical-timeline-element-work"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'left' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'left' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(191, 64, 191)' }}
 						date="2011 - present"
-						iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-						icon={<LinkedInIcon />}
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+						icon={<WorkIcon />}
 						visible={true}
-						position="right"
 					>
 						<h3 className="vertical-timeline-element-title">Creative Director</h3>
 						<h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
@@ -99,11 +94,10 @@ export default function Home() {
 					<VerticalTimelineElement
 						className="vertical-timeline-element-work"
 						date="2010 - 2011"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'right' }}
-						position="left"
-						iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						icon={<LinkedInIcon />}
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'right' }}
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(191, 64, 191)' }}
+						icon={<WorkIcon />}
 						visible={true}
 					>
 						<h3 className="vertical-timeline-element-title">Art Director</h3>
@@ -114,13 +108,12 @@ export default function Home() {
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
 						className="vertical-timeline-element-work"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'left' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						date="2008 - 2010"
-						iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-						icon={<LinkedInIcon />}
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'left' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(191, 64, 191)' }}
+						date="2021 - 2025"
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+						icon={<EduIcon />}
 						visible={true}
-						position="right"
 					>
 						<h3 className="vertical-timeline-element-title">Web Designer</h3>
 						<h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
@@ -130,13 +123,27 @@ export default function Home() {
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
 						className="vertical-timeline-element-work"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'right' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						date="2006 - 2008"
-						iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-						icon={<LinkedInIcon />}
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'left' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(191, 64, 191)' }}
+						date="2019-2020"
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+						icon={<EduIcon />}
 						visible={true}
-						position="left"
+					>
+						<h3 className="vertical-timeline-element-title">Web Designer</h3>
+						<h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+						<p>
+							User Experience, Visual Design
+						</p>
+					</VerticalTimelineElement>
+					<VerticalTimelineElement
+						className="vertical-timeline-element-work"
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'right' }}
+						contentArrowStyle={{ borderRight: '7px gradient  rgb(191, 64, 191)' }}
+						date="2019 - 2021"
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: 'white:invert' }}
+						icon={<EduIcon />}
+						visible={true}
 					>
 						<h3 className="vertical-timeline-element-title">Web Designer</h3>
 						<h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
@@ -146,13 +153,12 @@ export default function Home() {
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
 						className="vertical-timeline-element--education"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'left' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						date="April 2013"
-						iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-						icon={<LinkedInIcon />}
+						contentStyle={{ background: 'rgb(191, 64, 191)', color: '#fff', textAlign: 'left' }}
+						contentArrowStyle={{ borderRight: '7px solid  rgb(191, 64, 191)' }}
+						date="2008 - 2019"
+						iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+						icon={< EduIcon />}
 						visible={true}
-						position="right"
 					>
 						<h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
 						<h4 className="vertical-timeline-element-subtitle">Online Course</h4>

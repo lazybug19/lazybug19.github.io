@@ -76,10 +76,10 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-4">
-					<Link isExternal href={siteConfig.links.instagram} aria-label="Twitter">
+					<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
 						<InstagramIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.linkedin} aria-label="Discord">
+					<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
 						<LinkedInIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
