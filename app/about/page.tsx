@@ -2,27 +2,48 @@
 import { LinkedInIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import Image from "next/image";
+import { Card, CardBody } from "@nextui-org/card";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 export default function AboutPage() {
 	return (
 		<>
-			<div>
+			<div className="flex flex-col items-center justify-center gap-4 py-0 md:py-7">
 				<h1 className={title()}>About</h1>
 			</div>
-			<div className="inline-block w-full text-center">
-				<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-left">
-					<div className="relative col-span-6 md:col-span-4">
-						<Image src={"/img/me.jpeg"} height={150} width={150} alt="me" className="rounded-full" />
-					</div>
+			<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+				<div className="inline-block w-full text-center">
+					<Card
+						isBlurred
+						className="backdrop-blur-md w-full"
+						shadow="sm"
+					>
+						<CardBody>
+							<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
+								<div className="relative col-span-6 md:col-span-4">
+									<Image
+										alt="cover"
+										className="object-cover rounded-full"
+										height={200}
+										src="/img/me.jpeg"
+										width={100}
+									/>
+								</div>
 
-					<div className="flex flex-col col-span-6 md:col-span-8 justify-between items-start gap-0">
-						<div className="inline-block w-full text-center">
-							<h4 className="text-right">hi </h4>
-							<p></p>
-						</div>
-					</div>
+								<div className="flex flex-col col-span-6 md:col-span-8">
+									<div className="flex justify-between items-start">
+										<div className="flex flex-col gap-0">
+											<div className="inline-block w-full text-center justify-center">
+												<h1 className="text-xl">Hey there, I am </h1>
+												{/* <h1 className="bg-clip-text text-5xl md:text-7xl">DIVYATEJA PASUPULETI&nbsp;</h1> */}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</CardBody>
+					</Card>
 				</div>
 			</div>
 			<VerticalTimeline
