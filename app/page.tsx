@@ -47,38 +47,34 @@ export default function Home() {
 				<div className={title()} ref={el}></div>
 			</div>
 			{/* About Section */}
-			<div className="mt-10 w-full py-10" id="about">
-				<h1 className="text-5xl font-semibold py-10">About</h1>
-				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-					<div className="inline-block w-full text-center">
-						<div className="col-span-6 md:col-span-4">
-							<Image
-								alt="cover"
-								className="object-cover rounded-full lg:"
-								height={100}
-								src="/img/me.jpeg"
-								width={250}
-							/>
-						</div>
-						<Card
-							isBlurred
-							className="border border-white-invert border-spacing-2 backdrop-blur-md  w-full"
-							shadow="sm"
-						>
-							<CardBody>
-								<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-right justify-right">
-									<div className="relative col-span-6 md:col-span-8">
-										{/* <div className="flex justify-between items-start">
-											<div className="flex flex-col gap-0"> */}
-										<div className="inline-block w-full text-right justify-right">
-											<h1 className="text-xl">Hi, I am Santrupti </h1>
-										</div>
-										{/* </div>
-										</div> */}
-									</div>
+			<div className="mt-10 w-full py-14 text-center justify-center" id="about">
+				<h1 className={title()}>About</h1>
+				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
+					<div className="inline-block text-center py-8">
+						<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
+							<div className="flex col-span-8 md:col-span-4 row-span-full">
+								<Image
+									alt="me"
+									className="rounded-full"
+									height={100}
+									src="/img/me.jpeg"
+									width={270}
+								/>
+							</div>
+
+							<div className="flex col-span-3 md:col-span-8">
+								{/* <div className="flex justify-between items-start">
+									<div className="flex flex-col gap-0"> */}
+								<div className="inline-block w-full text-left">
+									<h1 className={title({ color: "violet", size: "sm" })}>Hi,&nbsp;</h1>
+									<h1 className="inline-block text-1xl">I am Santrupti, currently an ECE junior&nbsp;</h1>
+									at BITS Pilani, Hyderabad Campus. I am an <br />  avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate <br />of women in technology and have a knack for swiftly grasping new tech frameworks. <br /><br />
+									Plus, I am a trained western and classical dancer. You can find me reading books or writing <br /> poems in my free time. You can travel down my memory lane below!
 								</div>
-							</CardBody>
-						</Card>
+								{/* </div>
+								</div> */}
+							</div>
+						</div>
 					</div>
 				</div>
 				<VerticalTimeline
@@ -164,46 +160,17 @@ export default function Home() {
 							Strategy, Social Media
 						</p>
 					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className="vertical-timeline-element--education"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'right' }}
-
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						date="November 2012"
-						iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-						icon={<LinkedInIcon />}
-						visible={true}
-					>
-						<h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-						<h4 className="vertical-timeline-element-subtitle">Certification</h4>
-						<p>
-							Creative Direction, User Experience, Visual Design
-						</p>
-					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className="vertical-timeline-element--education"
-						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'left' }}
-						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-						date="2002 - 2006"
-						iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-						icon={<LinkedInIcon />}
-						visible={true}
-					>
-						<h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-						<h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-						<p>
-							Creative Direction, Visual Design
-						</p>
-					</VerticalTimelineElement>
 				</VerticalTimeline>
 				{/* Skills Section */}
-				<h1 className={title()}>Skills</h1>
+				<div className="mt-10 w-full py-14">
+					<h1 className={title()}>Skills</h1>
+				</div>
 				<div className="w-full flex items-center justify-center">
 					<div className="flex flex-wrap justify-center gap-4 max-w-xl">
 						{siteConfig.skills.map((item, index) => (
 							<Image
 								alt="logo"
-								className={`${item.invert && "dark:invert"} h-10 w-10 m-2 transform transition-transform hover:scale-150`}
+								className={`${item.invert && "dark:invert"} h-12 w-12 m-3 transform transition-transform hover:scale-150`}
 								src={item.href}
 								key={index}
 								width={0}
@@ -212,7 +179,7 @@ export default function Home() {
 						))}
 					</div>
 				</div>
-			</div>
+			</div >
 
 			{/* Projects Section */}
 
