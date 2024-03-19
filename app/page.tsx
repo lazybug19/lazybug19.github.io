@@ -15,11 +15,10 @@ export default function Home() {
 
 	useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ["Innovator", "Dancer", "Writer", "ECE Junior @ BITS Pilani"],
+			strings: ["Innovator", "Dancer", "Writer", "Tinkerer", "ECE@ BITS Pilani"],
 			startDelay: 300,
 			typeSpeed: 70,
 			backSpeed: 70,
-			shuffle: true,
 			backDelay: 70,
 			smartBackspace: true,
 			loop: true,
@@ -48,35 +47,34 @@ export default function Home() {
 				<div className={title()} ref={el}></div>
 			</div>
 			{/* About Section */}
-			<div className="mt-10 w-full" id="about">
-				<h1 className={title()}>About</h1>
+			<div className="mt-10 w-full py-10" id="about">
+				<h1 className="text-5xl font-semibold py-10">About</h1>
 				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 					<div className="inline-block w-full text-center">
+						<div className="col-span-6 md:col-span-4">
+							<Image
+								alt="cover"
+								className="object-cover rounded-full lg:"
+								height={100}
+								src="/img/me.jpeg"
+								width={250}
+							/>
+						</div>
 						<Card
 							isBlurred
-							className="backdrop-blur-md w-full"
+							className="border border-white-invert border-spacing-2 backdrop-blur-md  w-full"
 							shadow="sm"
 						>
 							<CardBody>
-								<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-									<div className="relative col-span-6 md:col-span-4">
-										<Image
-											alt="cover"
-											className="object-cover rounded-full"
-											height={200}
-											src="/img/me.jpeg"
-											width={100}
-										/>
-									</div>
-
-									<div className="flex flex-col col-span-6 md:col-span-8">
-										<div className="flex justify-between items-start">
-											<div className="flex flex-col gap-0">
-												<div className="inline-block w-full text-center justify-center">
-													<h1 className="text-xl">Hi, I am Santrupti </h1>
-												</div>
-											</div>
+								<div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-right justify-right">
+									<div className="relative col-span-6 md:col-span-8">
+										{/* <div className="flex justify-between items-start">
+											<div className="flex flex-col gap-0"> */}
+										<div className="inline-block w-full text-right justify-right">
+											<h1 className="text-xl">Hi, I am Santrupti </h1>
 										</div>
+										{/* </div>
+										</div> */}
 									</div>
 								</div>
 							</CardBody>
