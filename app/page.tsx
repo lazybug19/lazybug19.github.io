@@ -138,7 +138,7 @@ export default function Home() {
 							<h3 className="vertical-timeline-element-title text-xl">District Child Scientist Award</h3>
 							<h4 className="vertical-timeline-element-subtitle">State Government of Odisha</h4>
 							<br />
-							<h3 className="vertical-timeline-element-title text-xl">National Childrens' Science Congress</h3>
+							<h3 className="vertical-timeline-element-title text-xl">National Childrens&apos; Science Congress</h3>
 							<h4 className="vertical-timeline-element-subtitle">Fellow Child Scientist</h4>
 
 						</VerticalTimelineElement>
