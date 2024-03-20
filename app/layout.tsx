@@ -32,16 +32,17 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />
+			{/* gradient-to-r from-violet-500 to-fuchsia-500 */}
 			<body
 				className={clsx(
-					"min-h-screen bg-background font-sans antialiased",
+					"min-h-screen font-sans antialiased",
 					fontSans.variable
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+						<main className="container bg-[url('/img/black.jpg')] mx-auto max-w-7xl pt-16 px-6 flex-grow w-full">
 							{children}
 						</main>
 					</div>

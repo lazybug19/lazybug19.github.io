@@ -59,7 +59,7 @@ export const Navbar = () => {
 							<NextLink
 								className={clsx(
 									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-extrabold"
+									"data-[active=true]:text-primary data-[active=true]:font-medium"
 								)}
 								color="foreground"
 								href={item.href}
@@ -75,17 +75,17 @@ export const Navbar = () => {
 				className="hidden sm:flex basis-1/5 sm:basis-full"
 				justify="end"
 			>
-				<NavbarItem className="hidden sm:flex gap-4">
-					<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
+				<NavbarItem className="hidden sm:flex gap-2">
+					<Link isExternal href={siteConfig.links.instagram} aria-label="Twitter">
 						<InstagramIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
+					<Link isExternal href={siteConfig.links.linkedin} aria-label="Discord">
 						<LinkedInIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
-					<ThemeSwitch />
+					{/* <ThemeSwitch /> */}
 				</NavbarItem>
 
 			</NavbarContent>
@@ -94,7 +94,7 @@ export const Navbar = () => {
 				<Link isExternal href={siteConfig.links.github} aria-label="Github">
 					<GithubIcon className="text-default-500" />
 				</Link>
-				<ThemeSwitch />
+				{/* <ThemeSwitch /> */}
 				<NavbarMenuToggle />
 			</NavbarContent>
 
