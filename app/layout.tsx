@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
@@ -32,7 +31,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />
-			{/* gradient-to-r from-violet-500 to-fuchsia-500 */}
 			<body
 				className={clsx(
 					"min-h-screen font-sans antialiased",

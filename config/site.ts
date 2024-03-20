@@ -14,7 +14,11 @@ export const siteConfig = {
 		},
 		{
 			label: "Projects",
-			href: "#project",
+			href: "#projects",
+		},
+		{
+			label: "Contact",
+			href: "#contact",
 		},
 	],
 	skills: [
@@ -30,6 +34,8 @@ export const siteConfig = {
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-plain-wordmark.svg", invert: false },
+		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg", invert: false },
+		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg", invert: false },
 	],
 	links: {
 		github: "https://github.com/lazybug19",
