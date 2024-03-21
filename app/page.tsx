@@ -8,6 +8,7 @@ import { Card, CardBody } from "@nextui-org/card";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { siteConfig } from "@/config/site";
+import { Button } from "@nextui-org/button";
 
 
 export default function Home() {
@@ -65,13 +66,18 @@ export default function Home() {
 								</div>
 
 								<div className="flex col-span-3 md:col-span-8">
-									<div className="inline-block w-full text-left">
+									<div className="inline-block w-full text-left py-3">
 										<h1 className={title({ color: "violet", size: "sm" })}>Hi,&nbsp;</h1>
 										<h1 className="inline-block text-1xl">I am Santrupti, currently an ECE junior&nbsp;</h1>
 										at BITS Pilani, Hyderabad Campus. I am an <br />  avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate <br />of women in technology and have a knack for swiftly grasping new tech frameworks. <br /><br />
-										Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me <br /> reading books or writing poems in my free time. You can travel down my memory lane below, <br /> to check my small and big achievements!
+										Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me <br /> reading books or writing poems in my free time. You can travel down my memory lane below, <br /> to check my small and big achievements! <br /><br />
+										<Button className="bg-fuchsia-500">
+											<a href={siteConfig.links.mail} className="text-semibold">Get in touch!</a>
+										</Button>
 									</div>
+
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -105,10 +111,9 @@ export default function Home() {
 						visible={true}
 					>
 						<h3 className="vertical-timeline-element-title text-xl">Caarya</h3>
-						<h4 className="vertical-timeline-element-subtitle">Analyst Intern - Operations Domain</h4>
+						<h4 className="vertical-timeline-element-subtitle">Analyst Intern, Operations Domain</h4>
 						<p>
-							Organizational innovation implemented for Student Entrepreneurship Programs comprising of 100
-							+ students
+							Organizational innovation implemented for Student Entrepreneurship Programs comprising of 100+ students
 						</p>
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
@@ -231,16 +236,24 @@ export default function Home() {
 				</div>
 			</div >
 			{/* Projects Section */}
-			<div className="mt-10 w-full text-center justify-center" id="projects">
-				<h1 className={title()}>Projects</h1>
-			</div>
-			<div className="w-full flex items-center justify-center">
-				<div className="flex flex-wrap justify-center gap-4 max-w-xl">
-					<p>hi</p>
+			<div className="py-3">
+				<div className="mt-10 w-full text-center justify-center" id="projects">
+					<h1 className={title()}>Projects</h1>
+				</div>
+				<div className="w-full flex items-center justify-center">
+					<div className="flex flex-wrap justify-center gap-4 max-w-xl py-7">
+						<Button className="bg-fuchsia-500">
+							<a href={siteConfig.links.github} className="text-semibold">GitHub</a>
+						</Button>
+					</div>
 				</div>
 			</div>
-			{/*Contact*/}
-
+			{/*Bye*/}
+			<div className="py-3 text-center justify-center">
+				<h1 className="font-extralight py-1">Made with 💜</h1>
+				<h1 className="text-xs text-slate-400 py-1 justify-center">&#169; 2024 Santrupti Behera.</h1>
+			</div>
 		</section >
+
 	);
 }

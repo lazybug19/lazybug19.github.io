@@ -16,10 +16,6 @@ export const siteConfig = {
 			label: "Projects",
 			href: "#projects",
 		},
-		{
-			label: "Contact",
-			href: "#contact",
-		},
 	],
 	skills: [
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg", invert: false },
@@ -40,6 +36,7 @@ export const siteConfig = {
 	links: {
 		github: "https://github.com/lazybug19",
 		linkedin: "https://www.linkedin.com/in/santruptibehera/",
-		instagram: "https://www.instagram.com/_herecomessan_/"
+		instagram: "https://www.instagram.com/_herecomessan_/",
+		mail: "mailto:behera.santrupti02@gmail.com"
 	},
 };
