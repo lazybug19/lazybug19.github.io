@@ -37,17 +37,20 @@ export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-3 py-8 md:py-2 w-full">
 			{/* Home Section */}
-			<div className="py-3">
-				<div className="flex items-center justify-center" id="home">
-					<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
-				</div>
-				<div className="inline-block max-w-lg text-center justify-center">
-					<h1 className={title()}>I&apos;m&nbsp;</h1>
-					<h1 className={title({ color: "violet" })} >Santrupti&nbsp;</h1>
-					<br />
-					<div className={title()} ref={el}></div>
+			<div className="flex flex-col py-3 h-screen -translate-y-14 justify-around ">
+				<div>
+					<div className="flex items-center justify-center" id="home">
+						<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
+					</div>
+					<div className="inline-block w-full text-center justify-center">
+						<h1 className={title()}>I&apos;m&nbsp;</h1>
+						<h1 className={title({ color: "violet" })} >Santrupti&nbsp;</h1>
+						<br />
+						<div className={title()} ref={el}></div>
+					</div>
 				</div>
 			</div>
+
 			{/* About Section */}
 			<div className="mt-10 w-full text-center justify-center" id="about">
 				<div className="py-24 w-full">
@@ -55,23 +58,26 @@ export default function Home() {
 					<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
 						<div className="inline-block text-center py-8">
 							<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
-								<div className="flex col-span-8 md:col-span-4 row-span-full">
+								<div className="flex col-span-6 md:col-span-4 row-span-full px-4">
 									<Image
 										alt="me"
-										className="rounded-full"
+										className="rounded-full w-full h-full object-cover m-2"
 										height={100}
 										src="/img/me.jpeg"
 										width={270}
 									/>
 								</div>
 
-								<div className="flex col-span-3 md:col-span-8">
-									<div className="inline-block w-full text-left py-3">
-										<h1 className={title({ color: "violet", size: "sm" })}>Hi,&nbsp;</h1>
-										<h1 className="inline-block text-1xl">I am Santrupti, currently an ECE junior&nbsp;</h1>
-										at BITS Pilani, Hyderabad Campus. I am an <br />  avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate <br />of women in technology and have a knack for swiftly grasping new tech frameworks. <br /><br />
-										Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me <br /> reading books or writing poems in my free time. You can travel down my memory lane below, <br /> to check my small and big achievements! <br /><br />
-										<Button className="bg-fuchsia-500">
+								<div className="flex col-span-6 md:col-span-8">
+									<div className="inline-block w-full text-left py-3 px-9">
+										<div className="inline-block text-md">
+											<span className={title({ color: "violet", size: "sm" })}>Hi, </span>
+											I am Santrupti, currently an ECE junior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
+											<br />
+											<br />
+											Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me  reading books or writing poems in my free time. You can travel down my memory lane below, to check my small and big achievements!
+										</div>
+										<Button className="bg-fuchsia-400 my-4">
 											<a href={siteConfig.links.mail} className="text-semibold">Get in touch!</a>
 										</Button>
 									</div>

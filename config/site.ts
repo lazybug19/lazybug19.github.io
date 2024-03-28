@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Sansan's Folio",
+	name: "SanFolio",
 	description: "Santrupti Behera",
 	navItems: [
 		{
