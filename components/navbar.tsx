@@ -2,7 +2,6 @@ import {
 	Navbar as NextUINavbar,
 	NavbarContent,
 	NavbarMenu,
-	NavbarMenuToggle,
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
