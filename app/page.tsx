@@ -40,7 +40,7 @@ export default function Home() {
 			<div className="flex flex-col py-3 h-screen -translate-y-14 justify-around ">
 				<div>
 					<div className="flex items-center justify-center" id="home">
-						<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
+						<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden invert-1 transform-rotate-180 bg-gray-200 rounded-full" />
 					</div>
 					<div className="inline-block w-full text-center justify-center">
 						<h1 className={title()}>I&apos;m&nbsp;</h1>
@@ -152,8 +152,8 @@ export default function Home() {
 						<h3 className="vertical-timeline-element-title text-xl">District Child Scientist Award</h3>
 						<h4 className="vertical-timeline-element-subtitle">State Government of Odisha</h4>
 						<br />
-						<h3 className="vertical-timeline-element-title text-xl">Fellow Child Scientist</h3>
-						<h4 className="vertical-timeline-element-subtitle">National Childrens&apos; Science Congress</h4>
+						<h3 className="vertical-timeline-element-title text-xl">National Childrens&apos; Science Congress</h3>
+						<h4 className="vertical-timeline-element-subtitle">Fellow Child Scientist</h4>
 
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
