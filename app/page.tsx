@@ -42,10 +42,10 @@ export default function Home() {
 						<Image src={"https://illustrations.popsy.co/fuchsia/meditation-girl.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
 					</div>
 					<div className="inline-block w-full text-center justify-center">
-						<h1 className={title()}>I&apos;m&nbsp;</h1>
+						<h1 className={title({ color: "white" })}>I&apos;m&nbsp;</h1>
 						<h1 className={title({ color: "violet" })} >Santrupti&nbsp;</h1>
 						<br />
-						<div className={title()} ref={el}></div>
+						<div className={title({ color: "white" })} ref={el}></div>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@ export default function Home() {
 
 								<div className="flex col-span-6 md:col-span-8">
 									<div className="inline-block w-full text-left py-3 px-9">
-										<div className="inline-block text-md">
+										<div className="inline-block text-md text-white">
 											<span className={title({ color: "violet", size: "sm" })}>Hi, </span>
 											I am Santrupti, currently an ECE junior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
 											<br />
