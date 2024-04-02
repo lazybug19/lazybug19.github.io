@@ -12,15 +12,19 @@ export const metadata: Metadata = {
 		template: `%s - ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
-	themeColor: [
-		{ color: "white" },
-		{ color: "black" },
-	],
 	icons: {
 		icon: "/favicon.ico",
 		shortcut: "/favicon-8x8.png",
 	},
 };
+
+export const viewport = {
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "white" },
+		{ media: "(prefers-color-scheme: dark)", color: "white" },
+	],
+}
+
 
 export default function RootLayout({
 	children,
