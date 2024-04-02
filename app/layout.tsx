@@ -13,13 +13,12 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "white" },
-		{ media: "(prefers-color-scheme: dark)", color: "black" },
+		{ color: "white" },
+		{ color: "black" },
 	],
 	icons: {
 		icon: "/favicon.ico",
 		shortcut: "/favicon-8x8.png",
-		apple: "/apple-touch-icon.png",
 	},
 };
 
@@ -37,7 +36,7 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+				<Providers themeProps={{ attribute: "class" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
 						<main className="container bg-[url('/img/black.jpg')] mx-auto px-6 flex-grow w-full">
