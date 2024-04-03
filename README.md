@@ -1,9 +1,9 @@
 <h1 align="center">Welcome to my portfolio 👋</h1>
-<p>
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
-## Tech Usage
+## Tech Stack
 <ol>
 <li><a href="https://nextui.org/">NextUI v2</a>
 <li><a href="https://nextjs.org/docs/getting-started">Next.js 13</a>
@@ -23,7 +23,3 @@ npm install
 ```sh
 npm run start
 ```
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
