@@ -5,10 +5,9 @@ import {
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
+	NavbarMenuToggle,
 } from "@nextui-org/navbar";
-import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
@@ -19,30 +18,11 @@ import clsx from "clsx";
 import {
 	InstagramIcon,
 	GithubIcon,
-	SearchIcon,
 	LinkedInIcon,
 } from "@/components/icons";
 
 
 export const Navbar = () => {
-	const searchInput = (
-		<Input
-			aria-label="Search"
-			classNames={{
-				inputWrapper: "bg-default-100",
-				input: "text-sm",
-			}}
-			endContent={
-				<Kbd className="hidden lg:inline-block" keys={["command"]} />
-			}
-			labelPlacement="outside"
-			placeholder="Search..."
-			startContent={
-				<SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-			}
-			type="search"
-		/>
-	);
 
 	return (
 		<NextUINavbar className="bg-gradient-to-r from-fuchsia-400 to-fuchsia-800" maxWidth="xl" position="sticky">
@@ -59,7 +39,6 @@ export const Navbar = () => {
 								)}
 								color="foreground"
 								href={item.href}
-								scroll={true}
 							>
 								{item.label}
 							</NextLink>
@@ -73,10 +52,10 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-5">
-					<Link isExternal href={siteConfig.links.instagram} aria-label="Twitter">
+					<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
 						<InstagramIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.linkedin} aria-label="Discord">
+					<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
 						<LinkedInIcon className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
@@ -86,20 +65,28 @@ export const Navbar = () => {
 
 			</NavbarContent>
 
+			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+				<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
+					<InstagramIcon className="text-default-500" />
+				</Link>
+				<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
+					<LinkedInIcon className="text-default-500" />
+				</Link>
+				<Link isExternal href={siteConfig.links.github} aria-label="Github">
+					<GithubIcon className="text-default-500" />
+				</Link>
+				<NavbarMenuToggle />
+			</NavbarContent>
+
 			<NavbarMenu>
-				{searchInput}
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
 								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navItems.length - 1
-											? "danger"
-											: "foreground"
+									"foreground"
 								}
-								href="#"
+								href={item.href}
 								size="lg"
 							>
 								{item.label}
