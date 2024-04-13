@@ -13,6 +13,10 @@ export const siteConfig = {
 			href: "#about",
 		},
 		{
+			label: "Experiences",
+			href: "#exp",
+		},
+		{
 			label: "Projects",
 			href: "#projects",
 		},
