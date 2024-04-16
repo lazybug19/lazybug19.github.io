@@ -62,7 +62,7 @@ export default function Home() {
 										alt="me"
 										className="rounded-full w-full h-full object-cover m-2"
 										height={100}
-										src="/img/me.jpeg"
+										src="/Image/me.jpeg"
 										width={270}
 									/>
 								</div>
