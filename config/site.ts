@@ -5,10 +5,6 @@ export const siteConfig = {
 	description: "Santrupti Behera",
 	navItems: [
 		{
-			label: "Home",
-			href: "#",
-		},
-		{
 			label: "About",
 			href: "#about",
 		},
@@ -19,6 +15,10 @@ export const siteConfig = {
 		{
 			label: "Projects",
 			href: "#projects",
+		},
+		{
+			label: "Contact",
+			href: "#contact",
 		},
 	],
 	skills: [

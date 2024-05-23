@@ -1,14 +1,17 @@
 "use client"
 import { title } from "@/components/primitives";
 import Image from "next/image";
-import { AwardIcon, EduIcon, ResIcon, WorkIcon } from "@/components/icons";
+import { AwardIcon, EduIcon, GmailIcon, ResIcon, WorkIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { siteConfig } from "@/config/site";
 import { Button } from "@nextui-org/button";
-
+import { Link } from "@nextui-org/link";
+import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
+// import Swipe from "react-easy-swipe";
+// import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 export default function Home() {
 	const el = useRef(null);
@@ -76,9 +79,6 @@ export default function Home() {
 											<br />
 											Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me  reading books or writing poems in my free time. You can travel down my memory lane below, to check my small and big achievements!
 										</div>
-										<Button className="bg-fuchsia-400 my-4">
-											<a href={siteConfig.links.mail} className="text-semibold">Get in touch!</a>
-										</Button>
 									</div>
 
 								</div>
@@ -87,6 +87,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+
 				{/* Exp Section */}
 				<div className="mt-10 w-full text-center justify-center" id="exp">
 					<div className="py-20 w-full">
@@ -158,7 +159,6 @@ export default function Home() {
 									<br />
 									<h3 className="vertical-timeline-element-title text-xl">National Childrens&apos; Science Congress</h3>
 									<h4 className="vertical-timeline-element-subtitle">Fellow Child Scientist</h4>
-
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
@@ -229,11 +229,12 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+
 				{/* Skills Section */}
 				<div className="mt-10 w-full">
 					<h1 className={title()}>Skills</h1>
 				</div>
-				<div className="w-full flex items-center justify-center py-14">
+				<div className="w-full flex items-center justify-center py-12">
 					<div className="flex flex-wrap justify-center gap-4 max-w-xl">
 						{siteConfig.skills.map((item, index) => (
 							<Image
@@ -248,8 +249,9 @@ export default function Home() {
 					</div>
 				</div>
 			</div >
+
 			{/* Projects Section */}
-			<div className="py-3 px-10">
+			<div className="py-20 px-10">
 				<div className="mt-10 w-full text-center justify-center" id="projects">
 					<h1 className={title()}>Projects</h1>
 				</div>
@@ -261,10 +263,47 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+
 			{/*Bye*/}
-			<div className="py-3 text-center justify-center">
-				<h1 className="font-extralight py-1">Made with 💜</h1>
-				<h1 className="text-xs text-slate-400 py-1 justify-center">&#169; 2024 Santrupti Behera.</h1>
+			<div className="py-14 w-full" id="contact">
+				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
+					<div className="inline-block text-center py-8">
+						<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
+							<div className="flex col-span-6 md:col-span-4 row-span-full px-4">
+								<Image src={"https://illustrations.popsy.co/fuchsia/woman-holding-a-heart.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
+							</div>
+
+							<div className="flex col-span-6 md:col-span-8">
+								<div className="inline-block w-full text-left py-3 px-9">
+									<div className="inline-block text-md text-white">
+										<h1 className={title({ size: "sm" })}> Hope you liked the tour, <i>if yes <br />
+											get in touch!</i><br />
+										</h1>
+										<div className="hidden sm:flex gap-5 py-7">
+											<Link isExternal href={siteConfig.links.mail} aria-label="Gmail">
+												<GmailIcon className="text-default-500" />
+											</Link>
+											<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
+												<LinkedInIcon className="text-default-500" />
+											</Link>
+											<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
+												<InstagramIcon className="text-default-500" />
+											</Link>
+										</div>
+										{/* <Button className="bg-fuchsia-400 my-5">
+											<a href={siteConfig.links.mail} className="text-base">Get in touch!</a>
+										</Button> */}
+										<h1 className="text-medium text-slate-400">Made with 💜
+											&#169; 2024 Santrupti Behera.
+										</h1>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</section >
 
