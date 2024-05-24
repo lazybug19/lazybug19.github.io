@@ -343,7 +343,7 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">Fisher's LDA, DL, ML</p>
+						<p className="text-tiny text-black/60 uppercase font-bold">Fisher&apos;s LDA, DL, ML</p>
 						<h4 className="text-black font-medium text-large">CPU Performance based Attestation Framework</h4>
 					</CardHeader>
 					<Image
