@@ -1,7 +1,7 @@
 "use client"
 import { title } from "@/components/primitives";
 import Image from "next/image";
-import { AwardIcon, EduIcon, GmailIcon, ResIcon, WorkIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
+import { AwardIcon, EduIcon, GmailIcon, ResIcon, WorkIcon, InstagramIcon, LinkedInIcon, GithubIcon } from "@/components/icons";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -10,8 +10,6 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-// import Swipe from "react-easy-swipe";
-// import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 export default function Home() {
 	const el = useRef(null);
@@ -74,7 +72,7 @@ export default function Home() {
 									<div className="inline-block w-full text-left py-3 px-9">
 										<div className="inline-block text-md text-white">
 											<span className={title({ color: "violet", size: "sm" })}>Hi, </span>
-											I am Santrupti, currently an ECE junior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
+											I am Santrupti, currently an ECE senior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
 											<br />
 											<br />
 											Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me  reading books or writing poems in my free time. You can travel down my memory lane below, to check my small and big achievements!
@@ -251,21 +249,172 @@ export default function Home() {
 			</div >
 
 			{/* Projects Section */}
-			<div className="py-20 px-10">
-				<div className="mt-10 w-full text-center justify-center" id="projects">
-					<h1 className={title()}>Projects</h1>
-				</div>
-				<div className="w-full flex items-center justify-center">
-					<div className="flex flex-wrap justify-center gap-4 max-w-xl py-7">
-						<Button className="bg-fuchsia-500">
-							<a href={siteConfig.links.github} className="text-semibold">GitHub</a>
-						</Button>
-					</div>
-				</div>
+			<div className="py-20 px-10 mt-10 w-full text-center justify-center" id="projects">
+				<h1 className={title()}>Projects</h1>
+			</div>
+			<div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
+				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
+					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+						<p className="text-tiny text-black/50 uppercase font-bold"> Java Springboot, JPA+h2</p>
+						<h4 className="text-black font-medium text-large">Twitter Clone backend</h4>
+					</CardHeader>
+					<Image
+						alt="Card background"
+						className="z-0 w-full h-full object-cover"
+						src="/img/twit.jpg"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">RESTful web services.</p>
+							<p className="text-white/80 text-tiny">In-memory h2 database.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.twitter} aria-label="Github">
+							<GithubIcon className="text-default-600" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
+					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">POSIX-compliant, C-based</p>
+						<h4 className="text-black font-medium text-large"> Hotel Management System</h4>
+					</CardHeader>
+					<Image
+						alt="Card background"
+						className="z-0 w-full h-full object-cover"
+						src="/img/restro.png"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">Supports concurrent requests.</p>
+							<p className="text-white/80 text-tiny">Multi-threaded processing.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.hotel} aria-label="Github">
+							<GithubIcon className="text-default-700" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
+					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">Node.js, MongoDB+Express, Next.js</p>
+						<h4 className="text-black font-medium text-large">Blogger Clone full-stack</h4>
+					</CardHeader>
+					<Image
+						alt="Card background"
+						className="z-0  w-full h-full object-cover"
+						src="/img/blog.png"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">Next.js+TailwindCSS frontend.</p>
+							<p className="text-white/80 text-tiny">MEN backend.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.blog} aria-label="Github">
+							<GithubIcon className="text-default-700" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
+					<CardHeader className="absolute z-10 top-1 flex-col items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">Predictive Modelling, Decision Tree</p>
+						<h4 className="text-black font-medium text-large">Remote Early Arrhythmia Diagnosis System</h4>
+					</CardHeader>
+					<Image
+						alt="Card example background"
+						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+						src="/img/arr.png"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">ECG-based DAQ system.</p>
+							<p className="text-white/80 text-tiny">Decision Tree + CART based prediction.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.arrhythmia} aria-label="Github">
+							<GithubIcon className="text-default-600" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
+					<CardHeader className="absolute z-10 top-1 flex-col items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">Fisher's LDA, DL, ML</p>
+						<h4 className="text-black font-medium text-large">CPU Performance based Attestation Framework</h4>
+					</CardHeader>
+					<Image
+						alt="Relaxing app background"
+						className="z-0 w-full h-full object-cover"
+						src="/img/mal.png"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+						<div className="flex flex-grow gap-2 items-center">
+							<div className="flex flex-col">
+								<p className="text-white/80 text-tiny">Real-time multilabel IoT malware detection.</p>
+								<p className="text-white/80 text-tiny">CPU-Performance counters based Attestation.</p>
+							</div>
+						</div>
+						<Link isExternal href={siteConfig.links.malware} aria-label="Github">
+							<GithubIcon className="text-default-700" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
+					<CardHeader className="absolute z-10 top-1 flex-col items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">C++, Arduino</p>
+						<h4 className="text-black font-medium text-large">Potentiostat-based Sweat Biomarkers Detector</h4>
+					</CardHeader>
+					<Image
+						alt="Relaxing app background"
+						className="z-0 w-full h-full object-cover"
+						src="/img/poten.jpg"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+						<div className="flex flex-grow gap-2 items-center">
+							<div className="flex flex-col">
+								<p className="text-tiny text-white/60">IoT-enabled remote potentiostat.</p>
+								<p className="text-tiny text-white/60">Conveys CV results via Bluetooth.</p>
+							</div>
+						</div>
+						<Link isExternal href={siteConfig.links.iot} aria-label="Github">
+							<GithubIcon className="text-default-700" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
+					<CardHeader className="absolute z-10 top-1 flex-col items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">MySQL, Django, Python</p>
+						<h4 className="text-black font-medium text-large">Online Bakery Shop Backend</h4>
+					</CardHeader>
+					<Image
+						alt="Card example background"
+						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+						src="/img/cake.jpg"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">PL-SQL-based database schema.</p>
+							<p className="text-white/80 text-tiny">Django RESTApi server.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.bake} aria-label="Github">
+							<GithubIcon className="text-default-700" />
+						</Link>
+					</CardFooter>
+				</Card>
 			</div>
 
 			{/*Bye*/}
-			<div className="py-14 w-full" id="contact">
+			<div className="py-24 w-full" id="contact">
 				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
 					<div className="inline-block text-center py-8">
 						<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
@@ -276,8 +425,8 @@ export default function Home() {
 							<div className="flex col-span-6 md:col-span-8">
 								<div className="inline-block w-full text-left py-3 px-9">
 									<div className="inline-block text-md text-white">
-										<h1 className={title({ size: "sm" })}> Hope you liked the tour, <i>if yes <br />
-											get in touch!</i><br />
+										<h1 className={title({ size: "sm" })}> Hope you liked the tour, <i>if yes get<br />
+											in touch!</i><br />
 										</h1>
 										<div className="hidden sm:flex gap-5 py-7">
 											<Link isExternal href={siteConfig.links.mail} aria-label="Gmail">
@@ -290,9 +439,6 @@ export default function Home() {
 												<InstagramIcon className="text-default-500" />
 											</Link>
 										</div>
-										{/* <Button className="bg-fuchsia-400 my-5">
-											<a href={siteConfig.links.mail} className="text-base">Get in touch!</a>
-										</Button> */}
 										<h1 className="text-medium text-slate-400">Made with 💜
 											&#169; 2024 Santrupti Behera.
 										</h1>
