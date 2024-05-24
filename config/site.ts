@@ -5,6 +5,10 @@ export const siteConfig = {
 	description: "Santrupti Behera",
 	navItems: [
 		{
+			label: "Home",
+			href: "#",
+		},
+		{
 			label: "About",
 			href: "#about",
 		},
