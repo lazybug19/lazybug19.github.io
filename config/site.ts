@@ -32,7 +32,7 @@ export const siteConfig = {
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg", invert: false },
-		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg", invert: false },
+		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg", invert: true },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg", invert: false },
 		{ href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg", invert: false },
