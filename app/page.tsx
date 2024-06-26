@@ -339,7 +339,7 @@ export default function Home() {
 							<p className="text-white/100 text-tiny">ML and NLP-based detection.</p>
 							<p className="text-white/100 text-tiny">Django backend + Next.js frontend.</p>
 						</div>
-						<Link isExternal href={siteConfig.links.blog} aria-label="Github">
+						<Link isExternal href={siteConfig.links.fake} aria-label="Github">
 							<GithubIcon className="text-default-700" />
 						</Link>
 					</CardFooter>
@@ -383,7 +383,7 @@ export default function Home() {
 							<p className="text-white/100 text-tiny">Frontend based on Vite framework.</p>
 							<p className="text-white/100 text-tiny">Node.js, Express and MongoDB for backend.</p>
 						</div>
-						<Link isExternal href={siteConfig.links.arrhythmia} aria-label="Github">
+						<Link isExternal href={siteConfig.links.bitly} aria-label="Github">
 							<GithubIcon className="text-default-600" />
 						</Link>
 					</CardFooter>
@@ -407,7 +407,7 @@ export default function Home() {
 								<p className="text-white/100 text-tiny">Decision Tree + CART based prediction.</p>
 							</div>
 						</div>
-						<Link isExternal href={siteConfig.links.malware} aria-label="Github">
+						<Link isExternal href={siteConfig.links.arrhythmia} aria-label="Github">
 							<GithubIcon className="text-default-700" />
 						</Link>
 					</CardFooter>
@@ -431,7 +431,7 @@ export default function Home() {
 								<p className="text-tiny text-white/100">Neural Network based multilabel detection.</p>
 							</div>
 						</div>
-						<Link isExternal href={siteConfig.links.iot} aria-label="Github">
+						<Link isExternal href={siteConfig.links.malware} aria-label="Github">
 							<GithubIcon className="text-default-700" />
 						</Link>
 					</CardFooter>
@@ -453,7 +453,7 @@ export default function Home() {
 							<p className="text-tiny text-white/100">IoT-enabled remote potentiostat.</p>
 							<p className="text-tiny text-white/100">Conveys CV results via Bluetooth.</p>
 						</div>
-						<Link isExternal href={siteConfig.links.bake} aria-label="Github">
+						<Link isExternal href={siteConfig.links.iot} aria-label="Github">
 							<GithubIcon className="text-default-700" />
 						</Link>
 					</CardFooter>
@@ -465,17 +465,17 @@ export default function Home() {
 				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
 					<div className="inline-block text-center py-8">
 						<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
-							<div className="flex col-span-6 md:col-span-4 row-span-full px-4">
+							<div className="flex col-span-6 md:col-span-4 sm:col-span-6 row-span-full px-4">
 								<Image src={"https://illustrations.popsy.co/fuchsia/woman-holding-a-heart.svg"} height={270} width={270} alt="me" className="overflow-hidden transform-rotate-180 bg-gray-200 rounded-full" />
 							</div>
 
-							<div className="flex col-span-6 md:col-span-8">
+							<div className="flex col-span-6 md:col-span-8 sm:col-span-10">
 								<div className="inline-block w-full text-left py-3 px-9">
 									<div className="inline-block text-md text-white">
 										<h1 className={title({ size: "sm" })}> Hope you liked the tour, <i>if yes get<br />
 											in touch!</i><br />
 										</h1>
-										<div className="hidden sm:flex gap-5 py-7">
+										<div className="flex gap-5 py-7">
 											<Link isExternal href={siteConfig.links.mail} aria-label="Gmail">
 												<GmailIcon className="text-default-500" />
 											</Link>

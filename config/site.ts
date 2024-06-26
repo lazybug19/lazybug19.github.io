@@ -44,10 +44,10 @@ export const siteConfig = {
 		mail: "mailto:behera.santrupti02@gmail.com",
 		twitter: "https://github.com/lazybug19/SocialMediaApp",
 		hotel: "https://github.com/lazybug19/HotelMgmtSystem",
-		blog: "https://github.com/lazybug19/Bloggy",
 		arrhythmia: "https://github.com/lazybug19/Arrhythmia-Predictor",
 		malware: "https://github.com/lazybug19/Attester_Design",
 		iot: "https://github.com/lazybug19/SweatBiomarker_Detector",
-		bake: "https://github.com/lazybug19/DBMS_Assignment",
+		fake: "https://github.com/lazybug19/FakeAlert",
+		bitly: "https://github.com/lazybug19/Bitly",
 	},
 };
