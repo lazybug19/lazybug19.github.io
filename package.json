@@ -37,6 +37,7 @@
     "next-themes": "^0.2.1",
     "postcss": "8.4.31",
     "react": "18.2.0",
+    "react-aria": "^3.33.1",
     "react-dom": "18.2.0",
     "react-easy-carousel": "^1.1.5",
     "react-easy-swipe": "^0.0.23",

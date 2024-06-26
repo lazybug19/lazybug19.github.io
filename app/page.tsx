@@ -312,13 +312,35 @@ export default function Home() {
 						height={100}
 						width={270}
 					/>
-					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+					<CardFooter className="data-hover bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
 							<p className="text-white/80 text-tiny">RESTful web services.</p>
 							<p className="text-white/80 text-tiny">In-memory h2 database.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.twitter} aria-label="Github">
 							<GithubIcon className="text-default-600" />
+						</Link>
+					</CardFooter>
+				</Card>
+				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
+					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+						<p className="text-tiny text-black/60 uppercase font-bold">Node.js, MongoDB+Express, Next.js</p>
+						<h4 className="text-black font-medium text-large">Blogger Clone full-stack</h4>
+					</CardHeader>
+					<Image
+						alt="Card background"
+						className="z-0  w-full h-full object-cover"
+						src="/img/news.jpg"
+						height={100}
+						width={270}
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+						<div>
+							<p className="text-white/80 text-tiny">Next.js+TailwindCSS frontend.</p>
+							<p className="text-white/80 text-tiny">MEN backend.</p>
+						</div>
+						<Link isExternal href={siteConfig.links.blog} aria-label="Github">
+							<GithubIcon className="text-default-700" />
 						</Link>
 					</CardFooter>
 				</Card>
@@ -344,28 +366,6 @@ export default function Home() {
 						</Link>
 					</CardFooter>
 				</Card>
-				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
-					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">Node.js, MongoDB+Express, Next.js</p>
-						<h4 className="text-black font-medium text-large">Blogger Clone full-stack</h4>
-					</CardHeader>
-					<Image
-						alt="Card background"
-						className="z-0  w-full h-full object-cover"
-						src="/img/blog.png"
-						height={100}
-						width={270}
-					/>
-					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-						<div>
-							<p className="text-white/80 text-tiny">Next.js+TailwindCSS frontend.</p>
-							<p className="text-white/80 text-tiny">MEN backend.</p>
-						</div>
-						<Link isExternal href={siteConfig.links.blog} aria-label="Github">
-							<GithubIcon className="text-default-700" />
-						</Link>
-					</CardFooter>
-				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
 						<p className="text-tiny text-black/60 uppercase font-bold">Predictive Modelling, Decision Tree</p>
@@ -374,7 +374,7 @@ export default function Home() {
 					<Image
 						alt="Card example background"
 						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-						src="/img/arr.png"
+						src="/img/url.jpg"
 						height={100}
 						width={270}
 					/>
@@ -396,7 +396,7 @@ export default function Home() {
 					<Image
 						alt="Relaxing app background"
 						className="z-0 w-full h-full object-cover"
-						src="/img/mal.png"
+						src="/img/cardiac.png"
 						height={100}
 						width={270}
 					/>
@@ -420,7 +420,7 @@ export default function Home() {
 					<Image
 						alt="Relaxing app background"
 						className="z-0 w-full h-full object-cover"
-						src="/img/poten.jpg"
+						src="/img/mal.png"
 						height={100}
 						width={270}
 					/>
@@ -444,7 +444,7 @@ export default function Home() {
 					<Image
 						alt="Card example background"
 						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-						src="/img/cake.jpg"
+						src="/img/cv.png"
 						height={100}
 						width={270}
 					/>
