@@ -37,7 +37,7 @@ export default function Home() {
 
 	useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ["Innovator", "Dancer", "Writer", "Tinkerer", "ECE @BITS Pilani"],
+			strings: ["Innovator", "Dancer", "Writer", "Tinkerer", "ECE @ BITS Pilani"],
 			startDelay: 300,
 			typeSpeed: 70,
 			backSpeed: 70,
