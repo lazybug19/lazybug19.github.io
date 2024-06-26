@@ -16,7 +16,6 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import {
-	InstagramIcon,
 	GithubIcon,
 	LinkedInIcon,
 } from "@/components/icons";
@@ -25,19 +24,18 @@ import {
 export const Navbar = () => {
 
 	return (
-		<NextUINavbar className="bg-gradient-to-r from-fuchsia-400 to-fuchsia-800" maxWidth="xl" position="sticky">
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+		<NextUINavbar className="bg-gradient-to-r from-fuchsia-400 to-fuchsia-900" maxWidth="xl" position="sticky">
+			<NavbarContent className="basis-1/5 sm:basis-full md:basis-full" justify="end">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 				</NavbarBrand>
-				<ul className="hidden lg:flex gap-4 justify-start ml-2 w-full">
+				<ul className="hidden lg:flex gap-12 ml-72 mt-1 justify-center font-bold">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
 								className={clsx(
-									linkStyles({ color: "foreground" }),
+									linkStyles({ className: "text-default-600", size: "lg" }),
 									"data-[active=true]:text-primary data-[active=true]:font-bold"
 								)}
-								color="foreground"
 								href={item.href}
 							>
 								{item.label}
@@ -52,28 +50,22 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-5">
-					<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
-						<InstagramIcon className="text-default-500" />
-					</Link>
 					<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-						<LinkedInIcon className="text-default-500" />
+						<LinkedInIcon className="text-default-600" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-default-500" />
+						<GithubIcon className="text-default-600" />
 					</Link>
 				</NavbarItem>
 
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
-					<InstagramIcon className="text-default-500" />
-				</Link>
 				<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
-					<LinkedInIcon className="text-default-500" />
+					<LinkedInIcon className="text-default-600" />
 				</Link>
 				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
+					<GithubIcon className="text-default-600" />
 				</Link>
 				<NavbarMenuToggle />
 			</NavbarContent>

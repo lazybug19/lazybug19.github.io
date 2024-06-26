@@ -13,6 +13,26 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 
 export default function Home() {
 	const el = useRef(null);
+	const el2 = useRef(null);
+
+	useEffect(() => {
+		const typed = new Typed(el2.current, {
+			strings: ["Hi", "Hola", "Namaste", "Salaam", "Bonjour", "Ciao", "Hi"],
+			startDelay: 300,
+			typeSpeed: 200,
+			backSpeed: 200,
+			backDelay: 200,
+			smartBackspace: true,
+			loop: false,
+			showCursor: true,
+			cursorChar: "|"
+		});
+
+		// Destroying
+		return () => {
+			typed.destroy();
+		};
+	});
 
 	useEffect(() => {
 		const typed = new Typed(el.current, {
@@ -71,12 +91,17 @@ export default function Home() {
 								<div className="flex col-span-6 md:col-span-8">
 									<div className="inline-block w-full text-left py-3 px-9">
 										<div className="inline-block text-md text-white">
-											<span className={title({ color: "violet", size: "sm" })}>Hi, </span>
-											I am Santrupti, currently an ECE senior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
+											<span className={title({ color: "violet", size: "sm" })} ref={el2}></span>
+											, I am Santrupti, currently an ECE senior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
 											<br />
 											<br />
 											Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me  reading books or writing poems in my free time. You can travel down my memory lane below, to check my small and big achievements!
 										</div>
+										<Button>
+											<Link href={siteConfig.links.github} download>
+												Download Resume
+											</Link>
+										</Button>
 									</div>
 
 								</div>
@@ -93,8 +118,23 @@ export default function Home() {
 						<div className="py-16 w-full">
 							<VerticalTimeline
 								lineColor="#ddd"
-								layout="2-columns">
-
+								layout="2-columns"
+								animate={true}>
+								<VerticalTimelineElement
+									className="vertical-timeline-element-work"
+									date="2021"
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
+									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
+									icon={<WorkIcon />}
+									visible={true}
+								>
+									<h3 className="vertical-timeline-element-title text-xl">Oxiton, GSSoC&apos;24</h3>
+									<h4 className="vertical-timeline-element-subtitle">Open Source Developer</h4>
+									<p>
+										Organizational innovation implemented for Student Entrepreneurship Programs comprising of 100+ students
+									</p>
+								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
 									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'left' }}
@@ -107,13 +147,13 @@ export default function Home() {
 									<h3 className="vertical-timeline-element-title text-xl">Yashoda</h3>
 									<h4 className="vertical-timeline-element-subtitle">Summer Intern, Software and ML</h4>
 									<p>
-										Remote cardiac monitoring system designed for arrhythmia diagnosis with 98% accuracy
+										Decision Tree-based Remote cardiac monitoring system designed for early arrhythmia diagnosis with 98% accuracy backed by an Express-based UI.
 									</p>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
 									date="2021"
-									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'right' }}
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									icon={<WorkIcon />}
@@ -122,7 +162,7 @@ export default function Home() {
 									<h3 className="vertical-timeline-element-title text-xl">Caarya</h3>
 									<h4 className="vertical-timeline-element-subtitle">Analyst Intern, Operations Domain</h4>
 									<p>
-										Organizational innovation implemented for Student Entrepreneurship Programs comprising of 100+ students
+										Organizational innovation strategies and contact matrices implemented for Student Entrepreneurship Programs comprising of 100+ collegiate students.
 									</p>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
@@ -138,14 +178,14 @@ export default function Home() {
 									<h4 className="vertical-timeline-element-subtitle">BE, Electronics and Communication</h4>
 									<p>
 										Secretary - Automation and Robotics Club<br />
-										Slam Poetry Head - Literary Club<br />
-										Secretary - Odisha Regional Associaton<br />
-										Member - Dance Club, Innovation Cell
+										Slam Poetry Head - ELAS (Literary Club)<br />
+										Secretary - Utkal Samaj (Regional Associaton)<br />
+										Member - CYPHER (Dance Club), Innovation Cell
 									</p>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element--education"
-									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'right' }}
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									date="2020"
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
@@ -177,7 +217,7 @@ export default function Home() {
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
-									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'right' }}
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									date="2019 - 2020"
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
@@ -187,7 +227,7 @@ export default function Home() {
 									<h3 className="vertical-timeline-element-title text-xl">NISER Bhubaneswar</h3>
 									<h4 className="vertical-timeline-element-subtitle">TEM Laboratory and Animal House</h4>
 									<p>
-										Animal testing on self-devised anxiety models - 2020<br />
+										Lab Animal Testing on self-devised anxiety prototypes - 2020<br />
 										Characterization of self-made nanoparticles - 2019
 									</p>
 								</VerticalTimelineElement>
@@ -209,7 +249,7 @@ export default function Home() {
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element--education"
-									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'right' }}
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									date="2008 - 2019"
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
@@ -217,10 +257,10 @@ export default function Home() {
 									visible={true}
 								>
 									<h3 className="vertical-timeline-element-title text-xl">St. Xaviers High School</h3>
-									<h4 className="vertical-timeline-element-subtitle">95%</h4>
+									<h4 className="vertical-timeline-element-subtitle">General Science, 95%</h4>
 									<p>
-										School Literary Secretary<br />
-										SilverZone Science Olympiad 2017 - 1st Rank Regional
+										School Literary Secretary 2018-19<br />
+										SilverZone Science Olympiad 2017 : Rank 1 in Regionals
 									</p>
 								</VerticalTimelineElement>
 							</VerticalTimeline>
@@ -434,6 +474,9 @@ export default function Home() {
 											</Link>
 											<Link isExternal href={siteConfig.links.linkedin} aria-label="Linkedin">
 												<LinkedInIcon className="text-default-500" />
+											</Link>
+											<Link isExternal href={siteConfig.links.github} aria-label="Github">
+												<GithubIcon className="text-default-500" />
 											</Link>
 											<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
 												<InstagramIcon className="text-default-500" />
