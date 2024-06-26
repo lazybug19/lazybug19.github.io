@@ -1,7 +1,7 @@
 "use client"
 import { title } from "@/components/primitives";
 import Image from "next/image";
-import { AwardIcon, EduIcon, GmailIcon, ResIcon, WorkIcon, InstagramIcon, LinkedInIcon, GithubIcon } from "@/components/icons";
+import { AwardIcon, EduIcon, GmailIcon, ResIcon, WorkIcon, InstagramIcon, LinkedInIcon, GithubIcon, DownloadIcon } from "@/components/icons";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -10,19 +10,20 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
 	const el = useRef(null);
 	const el2 = useRef(null);
+	const { ref, inView } = useInView({
+		triggerOnce: true
+	});
 
 	useEffect(() => {
 		const typed = new Typed(el2.current, {
-			strings: ["Hi", "Hola", "Namaste", "Salaam", "Bonjour", "Ciao", "Hi"],
+			strings: ["Hi, "],
 			startDelay: 300,
-			typeSpeed: 200,
-			backSpeed: 200,
-			backDelay: 200,
-			smartBackspace: true,
+			typeSpeed: 300,
 			loop: false,
 			showCursor: true,
 			cursorChar: "|"
@@ -92,15 +93,21 @@ export default function Home() {
 									<div className="inline-block w-full text-left py-3 px-9">
 										<div className="inline-block text-md text-white">
 											<span className={title({ color: "violet", size: "sm" })} ref={el2}></span>
-											, I am Santrupti, currently an ECE senior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
+											I am Santrupti, currently an ECE senior, at BITS Pilani, Hyderabad Campus. I am an avid tech enthusiast and a quick learner with a niche for innovation. Also, a strong advocate of women in technology and have a knack for swiftly grasping new tech frameworks.
 											<br />
 											<br />
 											Hailing from Bhubaneswar, I am also a trained western and classical dancer. You can find me  reading books or writing poems in my free time. You can travel down my memory lane below, to check my small and big achievements!
+											<br />
+											<br />
 										</div>
-										<Button>
-											<Link href={siteConfig.links.github} download>
-												Download Resume
-											</Link>
+										<Button
+											className="text-fuchsia-500 text-lg"
+											href="https://drive.google.com/file/d/1XsDOXuCG_vGR4rTJRztthzNw9OszgLVk/view?usp=sharing"
+											as={Link}
+											showAnchorIcon
+											variant="ghost"
+										>
+											Resume
 										</Button>
 									</div>
 
@@ -115,14 +122,14 @@ export default function Home() {
 				<div className="mt-10 w-full text-center justify-center" id="exp">
 					<div className="py-20 w-full">
 						<h1 className={title()}>Experiences &amp; Achievements</h1>
-						<div className="py-16 w-full">
+						<div className="py-16 w-full" ref={ref}>
 							<VerticalTimeline
 								lineColor="#ddd"
 								layout="2-columns"
-								animate={true}>
+								animate={inView}>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
-									date="2021"
+									date="2024"
 									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}

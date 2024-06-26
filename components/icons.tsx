@@ -19,6 +19,18 @@ export const AwardIcon: React.FC<IconSvgProps> = ({
 	);
 };
 
+export const DownloadIcon: React.FC<IconSvgProps> = ({
+	className = "mt-4",
+	size,
+	width = 512,
+	height = 512,
+	...props
+}) => {
+	return (
+		<svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Download"><path d="M15.43,24.82l-10-7,1.14-1.64L15,22.08V2h2V22.08l8.43-5.9,1.14,1.64-10,7a1,1,0,0,1-1.14,0ZM28,23v4a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V23H2v4a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V23Z" fill="#d660d5" className="color000000 svgShape"></path></svg>
+	);
+};
+
 export const StarIcon: React.FC<IconSvgProps> = ({
 	size,
 	width = 512,

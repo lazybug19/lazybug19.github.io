@@ -24,7 +24,7 @@ import {
 export const Navbar = () => {
 
 	return (
-		<NextUINavbar className="bg-gradient-to-r from-fuchsia-400 to-fuchsia-900" maxWidth="xl" position="sticky">
+		<NextUINavbar className="bg-transparent" maxWidth="xl" position="sticky">
 			<NavbarContent className="basis-1/5 sm:basis-full md:basis-full" justify="end">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 				</NavbarBrand>
