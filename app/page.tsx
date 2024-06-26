@@ -307,15 +307,15 @@ export default function Home() {
 					</CardHeader>
 					<Image
 						alt="Card background"
-						className="z-0 w-full h-full object-cover"
+						className="z-0 w-full h-full object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/twit.jpg"
 						height={100}
 						width={270}
 					/>
-					<CardFooter className="data-hover bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
-							<p className="text-white/80 text-tiny">RESTful web services.</p>
-							<p className="text-white/80 text-tiny">In-memory h2 database.</p>
+							<p className="text-white/100 text-tiny">RESTful web services.</p>
+							<p className="text-white/100 text-tiny">In-memory h2 database.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.twitter} aria-label="Github">
 							<GithubIcon className="text-default-600" />
@@ -324,20 +324,20 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="col-span-12 sm:col-span-4 h-[300px]">
 					<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">Node.js, MongoDB+Express, Next.js</p>
-						<h4 className="text-black font-medium text-large">Blogger Clone full-stack</h4>
+						<p className="text-tiny text-black/60 uppercase font-bold">ML, NLP, Django REST, NextUI </p>
+						<h4 className="text-black font-medium text-large">Fake News Detection App</h4>
 					</CardHeader>
 					<Image
 						alt="Card background"
-						className="z-0  w-full h-full object-cover"
+						className="z-0  w-full h-full object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/news.jpg"
 						height={100}
 						width={270}
 					/>
 					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
-							<p className="text-white/80 text-tiny">Next.js+TailwindCSS frontend.</p>
-							<p className="text-white/80 text-tiny">MEN backend.</p>
+							<p className="text-white/100 text-tiny">ML and NLP-based detection.</p>
+							<p className="text-white/100 text-tiny">Django backend + Next.js frontend.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.blog} aria-label="Github">
 							<GithubIcon className="text-default-700" />
@@ -351,15 +351,15 @@ export default function Home() {
 					</CardHeader>
 					<Image
 						alt="Card background"
-						className="z-0 w-full h-full object-cover"
+						className="z-0 w-full h-full object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/restro.png"
 						height={100}
 						width={270}
 					/>
 					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
-							<p className="text-white/80 text-tiny">Supports concurrent requests.</p>
-							<p className="text-white/80 text-tiny">Multi-threaded processing.</p>
+							<p className="text-white/100 text-tiny">Supports concurrent requests.</p>
+							<p className="text-white/100 text-tiny">Shared memory and IPC management.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.hotel} aria-label="Github">
 							<GithubIcon className="text-default-700" />
@@ -368,20 +368,20 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">Predictive Modelling, Decision Tree</p>
-						<h4 className="text-black font-medium text-large">Remote Early Arrhythmia Diagnosis System</h4>
+						<p className="text-tiny text-black/60 uppercase font-bold">Vite, TailwindCSS, Node.js, MongoDB</p>
+						<h4 className="text-black font-medium text-large">URL Shortener Clone</h4>
 					</CardHeader>
 					<Image
 						alt="Card example background"
-						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/url.jpg"
 						height={100}
 						width={270}
 					/>
 					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
-							<p className="text-white/80 text-tiny">ECG-based DAQ system.</p>
-							<p className="text-white/80 text-tiny">Decision Tree + CART based prediction.</p>
+							<p className="text-white/100 text-tiny">Frontend based on Vite framework.</p>
+							<p className="text-white/100 text-tiny">Node.js, Express and MongoDB for backend.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.arrhythmia} aria-label="Github">
 							<GithubIcon className="text-default-600" />
@@ -390,12 +390,12 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">Fisher&apos;s LDA, DL, ML</p>
-						<h4 className="text-black font-medium text-large">CPU Performance based Attestation Framework</h4>
+						<p className="text-tiny text-black/60 uppercase font-bold">Predictive Modelling, Decision Tree</p>
+						<h4 className="text-black font-medium text-large">Remote Early Arrhythmia Diagnosis System</h4>
 					</CardHeader>
 					<Image
 						alt="Relaxing app background"
-						className="z-0 w-full h-full object-cover"
+						className="z-0 w-full h-full object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/cardiac.png"
 						height={100}
 						width={270}
@@ -403,8 +403,8 @@ export default function Home() {
 					<CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
 						<div className="flex flex-grow gap-2 items-center">
 							<div className="flex flex-col">
-								<p className="text-white/80 text-tiny">Real-time multilabel IoT malware detection.</p>
-								<p className="text-white/80 text-tiny">CPU-Performance counters based Attestation.</p>
+								<p className="text-white/100 text-tiny">ECG-based Data-Acquisition (DAQ) system.</p>
+								<p className="text-white/100 text-tiny">Decision Tree + CART based prediction.</p>
 							</div>
 						</div>
 						<Link isExternal href={siteConfig.links.malware} aria-label="Github">
@@ -414,12 +414,12 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">C++, Arduino</p>
-						<h4 className="text-black font-medium text-large">Potentiostat-based Sweat Biomarkers Detector</h4>
+						<p className="text-tiny text-black/60 uppercase font-bold">Ensemble Model, Python</p>
+						<h4 className="text-black font-medium text-large">Attestation Framework for IoT</h4>
 					</CardHeader>
 					<Image
 						alt="Relaxing app background"
-						className="z-0 w-full h-full object-cover"
+						className="z-0 w-full h-full object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/mal.png"
 						height={100}
 						width={270}
@@ -427,8 +427,8 @@ export default function Home() {
 					<CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
 						<div className="flex flex-grow gap-2 items-center">
 							<div className="flex flex-col">
-								<p className="text-tiny text-white/60">IoT-enabled remote potentiostat.</p>
-								<p className="text-tiny text-white/60">Conveys CV results via Bluetooth.</p>
+								<p className="text-tiny text-white/100">Stack Model and Max Voting Classification for IoT malware detection.</p>
+								<p className="text-tiny text-white/100">Neural Network based multilabel detection.</p>
 							</div>
 						</div>
 						<Link isExternal href={siteConfig.links.iot} aria-label="Github">
@@ -438,20 +438,20 @@ export default function Home() {
 				</Card>
 				<Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
 					<CardHeader className="absolute z-10 top-1 flex-col items-start">
-						<p className="text-tiny text-black/60 uppercase font-bold">MySQL, Django, Python</p>
-						<h4 className="text-black font-medium text-large">Online Bakery Shop Backend</h4>
+						<p className="text-tiny text-black/60 uppercase font-bold">C++, Arduino</p>
+						<h4 className="text-black font-medium text-large">Potentiostat-based Sweat Biomarkers Detector</h4>
 					</CardHeader>
 					<Image
 						alt="Card example background"
-						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover hover:scale-150 transition-transform duration-300 ease-in-out"
 						src="/img/cv.png"
 						height={100}
 						width={270}
 					/>
 					<CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
 						<div>
-							<p className="text-white/80 text-tiny">PL-SQL-based database schema.</p>
-							<p className="text-white/80 text-tiny">Django RESTApi server.</p>
+							<p className="text-tiny text-white/100">IoT-enabled remote potentiostat.</p>
+							<p className="text-tiny text-white/100">Conveys CV results via Bluetooth.</p>
 						</div>
 						<Link isExternal href={siteConfig.links.bake} aria-label="Github">
 							<GithubIcon className="text-default-700" />
