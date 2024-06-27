@@ -146,7 +146,7 @@ export default function Home() {
 									className="vertical-timeline-element-work"
 									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
-									date="2023"
+									date="2023-24"
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
 									icon={<ResIcon />}
 									visible={true}
