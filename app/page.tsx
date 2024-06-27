@@ -148,7 +148,7 @@ export default function Home() {
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									date="2023"
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
-									icon={<WorkIcon />}
+									icon={<ResIcon />}
 									visible={true}
 								>
 									<h3 className="vertical-timeline-element-title text-xl">Undergraduate Research Assistant</h3>
