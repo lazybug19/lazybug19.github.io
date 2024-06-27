@@ -138,9 +138,9 @@ export default function Home() {
 								>
 									<h3 className="vertical-timeline-element-title text-xl">Oxiton, GSSoC&apos;24</h3>
 									<h4 className="vertical-timeline-element-subtitle">Open Source Developer</h4>
-									<p>
-										Organizational innovation implemented for Student Entrepreneurship Programs comprising of 100+ students
-									</p>
+									<br />
+									<h3 className="vertical-timeline-element-title text-xl">Codess.Cafe OSS Cohort-5</h3>
+									<h4 className="vertical-timeline-element-subtitle">One of Top 60 Open Source Software Mentees</h4>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
@@ -151,11 +151,8 @@ export default function Home() {
 									icon={<WorkIcon />}
 									visible={true}
 								>
-									<h3 className="vertical-timeline-element-title text-xl">Yashoda</h3>
+									<h3 className="vertical-timeline-element-title text-xl">Yashoda Healthcare</h3>
 									<h4 className="vertical-timeline-element-subtitle">Summer Intern, Software and ML</h4>
-									<p>
-										Decision Tree-based Remote cardiac monitoring system designed for early arrhythmia diagnosis with 98% accuracy backed by an Express-based UI.
-									</p>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
@@ -168,9 +165,6 @@ export default function Home() {
 								>
 									<h3 className="vertical-timeline-element-title text-xl">Caarya</h3>
 									<h4 className="vertical-timeline-element-subtitle">Analyst Intern, Operations Domain</h4>
-									<p>
-										Organizational innovation strategies and contact matrices implemented for Student Entrepreneurship Programs comprising of 100+ collegiate students.
-									</p>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
@@ -232,11 +226,7 @@ export default function Home() {
 									visible={true}
 								>
 									<h3 className="vertical-timeline-element-title text-xl">NISER Bhubaneswar</h3>
-									<h4 className="vertical-timeline-element-subtitle">TEM Laboratory and Animal House</h4>
-									<p>
-										Lab Animal Testing on self-devised anxiety prototypes - 2020<br />
-										Characterization of self-made nanoparticles - 2019
-									</p>
+									<h4 className="vertical-timeline-element-subtitle">Student Research Volunteer</h4>
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element--education"
