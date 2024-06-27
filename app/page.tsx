@@ -144,6 +144,18 @@ export default function Home() {
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
+									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
+									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
+									date="2023"
+									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
+									icon={<WorkIcon />}
+									visible={true}
+								>
+									<h3 className="vertical-timeline-element-title text-xl">Undergraduate Research Assistant</h3>
+									<h4 className="vertical-timeline-element-subtitle">CSIS and EEE Department, BITS Pilani</h4>
+								</VerticalTimelineElement>
+								<VerticalTimelineElement
+									className="vertical-timeline-element-work"
 									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'left' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
 									date="2023"
@@ -156,7 +168,7 @@ export default function Home() {
 								</VerticalTimelineElement>
 								<VerticalTimelineElement
 									className="vertical-timeline-element-work"
-									date="2021"
+									date="2022"
 									contentStyle={{ background: 'rgb(218, 112, 214)', color: '#fff', textAlign: 'start' }}
 									iconStyle={{ background: 'rgb(191, 64, 191)', color: '#fff' }}
 									contentArrowStyle={{ borderRight: '7px solid  rgb(218, 112, 214)' }}
