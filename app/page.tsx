@@ -462,8 +462,8 @@ export default function Home() {
 				</Card>
 			</div>
 
-			{/*Bye*/}
-			<div className="py-24 w-full" id="contact">
+			{/*Bye*/}	
+			<div className="py-20 mt-10 w-full" id="contact">
 				<div className="flex flex-col items-center justify-center gap-4 py-8 md:py-7">
 					<div className="inline-block text-center py-8">
 						<div className="grid grid-cols-6 md:grid-cols-12 items-center justify-evenly">
